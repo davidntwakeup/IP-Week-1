@@ -9,3 +9,15 @@ a {
     -webkit-transition: 5s;
     transition: 5s;
 }
+
+em {
+    font-style: oblique;
+}
+
+strong {
+    font-style: bold;
+}
+
+img {
+    width: 100%;
+}
