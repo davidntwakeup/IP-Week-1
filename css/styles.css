@@ -32,3 +32,15 @@ h3 {
     font-size: 1.87em;
 }
 
+header {
+	background:
+	linear-gradient(
+	rgba(224,204,200, 1.0),
+	rgba(224,204,200,0.90)
+	),
+	/* bottom, image */
+	url(/home/davididntwakeup/Documents/moringa-prep/IP1/img/keyboard.jpg);
+	background-size: cover;
+	background-position: center top;
+	width: 100%;
+}
