@@ -209,3 +209,26 @@ footer {
 	letter-spacing: .03em;
 	font-size: 1em;
 }
+
+.credit {
+	float: left;
+}
+
+.social {
+	float: right;
+}
+
+.social li {
+	display: inline;
+}
+
+.social li a {
+	color: #fff;
+	padding: 0.2em;
+	font-size: 1.8em;
+	font-weight: 600;
+}
+
+.social li a:hover {
+	color: #011833;
+}
