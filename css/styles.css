@@ -1,14 +1,64 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End CSS Reset */
+
 body {
     background-color: whitesmoke;
 }
 
-a {
+/* a {
     -o-transition: 5s;
     -ms-transition: 5s;
     -moz-transition: 5s;
     -webkit-transition: 5s;
     transition: 5s;
-}
+} */
 
 em {
     font-style: oblique;
@@ -20,10 +70,11 @@ strong {
 
 img {
     width: 100%;
+    height: inherit;
 }
 
 h1,h2,h3,h4,h5 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
 }
 
@@ -35,7 +86,7 @@ h3 {
 header {
 	background:
 	linear-gradient(
-	rgba(224,204,200, 1.0),
+	aqua,
 	rgba(224,204,200,0.90)
 	),
 	/* bottom, image */
@@ -56,7 +107,7 @@ header {
 	text-align: center;
 	color: #fff;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.01em;
 	font-weight: 800;
 	line-height: 1.5em;
 }
@@ -126,10 +177,10 @@ header {
 
 .button {
 	padding: 5% 3%;
-	border: 3px solid #e0ccc8;
+	border: 3px solid #011833;
 	letter-spacing: 0.2em;
 	text-decoration: none;
-	color: #e0ccc8;
+	color: #011833;
 	text-align: center;
 	display: block;
 	font-weight: 600;
@@ -138,8 +189,8 @@ header {
 }
 
 .button:hover {
-	color: #fff;
-	background-color: #e0ccc8;
+	color: #011833;
+	background-color: whitesmoke;
 }
 
 .image-area {
@@ -180,16 +231,16 @@ header {
 }
 
 .image-divider {
-	padding: 15% 0;
+	padding: 25% 0;
 	background: 
 	/* bottom, image */
 	url(/home/davididntwakeup/Desktop/test/portfolio/img/laptop.jpg);
-	background-size: contain;
+	background-size: cover;
 	background-position: center top;
 }
 
 footer {
-	background-color: #e0ccc8;
+	background-color: cadetblue;
 	color: #fff;
 	padding: 2% 0;
 	width: 100%;
@@ -211,7 +262,8 @@ footer {
 }
 
 .credit {
-	float: left;
+    float: inline-end;
+    text-align: center;
 }
 
 .social {
@@ -231,4 +283,37 @@ footer {
 
 .social li a:hover {
 	color: #011833;
+}
+
+@media only screen and (max-widht:800px) {
+	.intro h1 {
+		font-size: 4em;
+		line-height: 1.2;
+	}
+	.intro h2 {
+		font-size: 1.8em;
+		padding-top: 3%;
+	}
+	.about p {
+		font-size: 1em;
+		line-height: 2;
+	}
+	footer {
+		height: 130px;
+		line-height: 1.3em;
+	}
+	.footer-content {
+		padding: 4%;
+		font-size: 14px;
+	}
+	.social {
+		float: left;
+	}
+	.social li a {
+		font-size: 1.3em;
+	}
+	.contact-content {
+		font-size: 12px;
+		line-height: 1.5;
+	}
 }
