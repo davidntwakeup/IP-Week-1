@@ -7,6 +7,3 @@ In the first week of Moringa Prep I learned about using the command line, git ,h
 This is a website. Copy the URL and paste it in your browser or click on the link below.
 #### Link to live site
 [Portfolio GitHub Page](https://davidntwakeup.github.io/IP-Week-1/)
-#### License
-
-Copyright 2020 Zahid Awadh
